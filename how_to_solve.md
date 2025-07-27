@@ -20,13 +20,13 @@ Go to '0x00000000004004ed <+87>:	jne    0x4004fb <main+101>' 0x00000000004004ed 
 
 'jne' is (jump if not equal) it usises ZF(zero flags) if it returns 0 password is correct if return is less or greater then 0 password is incorrect.
 
--------------------------------------------------------------------------------------------------
+
 Then u should see: (0x00000000004004ef <+89>:	mov    $0x401270, %edi) <- output: 'correct password'.
 (0x00000000004004fb <+101>:	mov    $0x401290, %edi) <- output: 'incorrect password'.
+
 we need here:
 0x00000000004004ef = 0x4004ef the 'correct password' output.
 how to check it 'x/s 0x401270'.
--------------------------------------------------------------------------------------------------
 
 After that you run your program again: 'r'.
 Get back to (0x00000000004004eb <+85>:	test   %eax,%eax)
