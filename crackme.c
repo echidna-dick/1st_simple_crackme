@@ -5,7 +5,7 @@ int main() {
     char password_buffer[16];
     char correct_password[] = "mypassword";
 
-    printf("Введите пароль: ");
+    printf("Enter password: ");
     scanf("%15s", password_buffer);
 
     if (strcmp(password_buffer, correct_password) == 0) {
