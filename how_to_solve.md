@@ -9,7 +9,7 @@ IN GDB
 'disas main' To disassembly main func.
 
 TODO:
-you have to get to <__isoc23_scanf@plt> using ni(next instructions).
+you have to get to <__isoc23_scanf@plt> or <scanf@plt> depence on your GCC version(to cheak 'gcc --version') using ni(next instructions).
 <__isoc23_scanf@plt> is an input in C using scanf!
 Then 'enter password: ' line will appear. Write wrong password and press enter.
 use 'disas main' if your lost.
