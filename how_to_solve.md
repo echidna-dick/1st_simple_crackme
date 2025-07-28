@@ -1,6 +1,6 @@
 # how to solve
 
-First you comple your program 'gcc -g crackme.c -o crckme'.
+First you comple your program 'gcc -g crackme.c -o crackme'.
 Then you run it using GDB 'gdb ./crackme'.
 
 IN GDB
@@ -10,6 +10,7 @@ IN GDB
 
 TODO:
 you have to get to <__isoc23_scanf@plt> using ni(next instructions).
+<__isoc23_scanf@plt> is an input in C using scanf!
 Then 'enter password: ' line will appear. Write wrong password and press enter.
 use 'disas main' if your lost.
 Go to (test %eax, %eax) // this is the 'if (strcmp(password_buffer, correct_password) == 0)' part.
